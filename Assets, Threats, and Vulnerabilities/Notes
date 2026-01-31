@@ -1,1 +1,264 @@
+🛡️ Organizational Asset Security – Easy Step-by-Step Short Notes
+1️⃣ Security আসলে কী?
 
+👉 Security মানে শুধু hacker না
+👉 People + Process + Technology একসাথে ব্যবহার করে asset protect করা
+
+উদাহরণ:
+
+Engineer → Gmail secure করে
+
+Analyst → evidence analyze করে
+
+Guard → physical security দেখে
+
+2️⃣ Risk & CIA Triad (Security-এর মূল ভিত্তি)
+🔹 Risk কী?
+
+👉 যেকোনো কিছু যা Confidentiality, Integrity, Availability ক্ষতি করতে পারে
+
+🔹 CIA Triad (মুখস্থ করো):
+
+Confidentiality → Data গোপন থাকবে
+
+Integrity → Data পরিবর্তন হবে না
+
+Availability → দরকার হলে পাওয়া যাবে
+
+⚠️ একটাও ভাঙলে → বড় ক্ষতি
+
+3️⃣ Asset – Threat – Vulnerability (What, Why, How)
+🔹 Asset (কি protect করবো?)
+
+Data
+
+Laptop, server
+
+Software
+
+People
+
+🔹 Threat (কারা/কি ক্ষতি করবে?)
+
+Hacker
+
+Disgruntled employee
+
+Natural disaster
+
+Accident
+
+🔹 Vulnerability (দুর্বলতা)
+
+Weak password
+
+Old software
+
+Misconfiguration
+
+📌 Formula:
+
+Risk = Asset + Threat + Vulnerability
+
+4️⃣ Asset Management & Inventory
+🔹 কেন দরকার?
+
+👉 যেটা জানো না → সেটা protect করা যাবে না
+
+Step-by-step:
+
+সব asset-এর list বানাও
+
+কে কোথায় আছে জানো
+
+Missing হলে alert
+
+(Shepherd–sheep example)
+
+5️⃣ Asset Classification (Data কতটা sensitive)
+
+Public → Website info
+
+Internal → Office memo
+
+Confidential → Project data
+
+Restricted → Password, payment, health data
+
+👉 Restricted = highest security
+
+6️⃣ Three States of Data (খুব important)
+1️⃣ Data in Use
+
+এখন ব্যবহার হচ্ছে
+
+Example: Email পড়া
+
+Risk: Screen দেখা, device theft
+
+2️⃣ Data in Transit
+
+Internet দিয়ে যাচ্ছে
+
+Example: Email পাঠানো
+
+Risk: Interception
+
+Protection: Encryption, HTTPS
+
+3️⃣ Data at Rest
+
+Store করা
+
+Example: Laptop বন্ধ
+
+Risk: Device চুরি
+
+Protection: Disk encryption
+
+7️⃣ Privacy & Least Privilege
+🔹 Least Privilege
+
+👉 User যতটুকু দরকার → ততটুকুই access
+
+🔹 Roles:
+
+Data Owner → Access decide করে
+
+Data Custodian → Data protect করে
+
+8️⃣ Policies, Standards, Procedures
+
+Policy → কী & কেন
+
+Standard → কতটা strong
+
+Procedure → কীভাবে step-by-step
+
+উদাহরণ:
+
+Policy: Strong password দরকার
+
+Standard: 8 character
+
+Procedure: Password reset steps
+
+9️⃣ NIST Cybersecurity Framework (5 Steps)
+
+1️⃣ Identify – Asset চেনা
+2️⃣ Protect – Protect করা
+3️⃣ Detect – Attack detect
+4️⃣ Respond – Action নেওয়া
+5️⃣ Recover – Normal হওয়া
+
+🔟 Encryption & Cryptography (Short)
+
+Symmetric → Same key (fast)
+
+Asymmetric → Public + Private key (secure)
+
+Hashing → Data change detect
+
+PKI → Certificate দিয়ে trust
+
+1️⃣1️⃣ AAA Framework (Access Control)
+
+1️⃣ Authentication → তুমি কে?
+2️⃣ Authorization → কী করতে পারো?
+3️⃣ Accounting → কী করেছো?
+
+Extra:
+
+MFA → Multiple proof
+
+SSO → একবার login
+
+1️⃣2️⃣ Vulnerability Management
+4 steps:
+
+Find vulnerability
+
+Analyze
+
+Priority দাও
+
+Fix করো
+
+Zero-day → No patch
+
+CVE → Public vulnerability list
+
+CVSS → 0–10 severity
+
+1️⃣3️⃣ Defense in Depth
+
+👉 একটার পর একটা layer
+
+Perimeter → Firewall
+
+Network → Segmentation
+
+Endpoint → Antivirus
+
+Application → MFA
+
+Data → Encryption
+
+1️⃣4️⃣ Social Engineering & Malware
+Social Engineering
+
+Phishing
+
+Smishing
+
+Vishing
+
+👉 মানুষকে বোকা বানায়
+
+Malware Types
+
+Virus
+
+Worm
+
+Trojan
+
+Ransomware
+
+Spyware
+
+Cryptojacking
+
+1️⃣5️⃣ Web Attacks
+XSS
+
+Reflected
+
+Stored
+
+DOM-based
+
+SQL Injection
+
+Input field দিয়ে database attack
+
+Protection: Input sanitization, prepared statement
+
+1️⃣6️⃣ Threat Modeling – PASTA (Short)
+7 Steps:
+
+Goal set
+
+Scope
+
+Data flow
+
+Threat
+
+Vulnerability
+
+Attack simulate
+
+Risk fix
+
+👉 Business + Security একসাথে
