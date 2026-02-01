@@ -1,0 +1,879 @@
+Module 1 : Network Architecture
+# 🌐 Network & Network Security — GitHub Notes
+
+> **Source:** Google Cybersecurity Certificate – *Connect and Protect: Networks and Network Security*
+>
+> **Language:** Bangla + English (easy + exam-ready)
+
+---
+
+## 1️⃣ What is a Network?
+
+A **network** is a system where multiple devices communicate and exchange data.
+
+* Data is sent as **packets**
+* A packet contains:
+
+  * **Source** (who sends)
+  * **Destination** (who receives)
+  * **Data (body)**
+
+---
+
+## 2️⃣ Network Devices (Core Components)
+
+Devices that control, forward, and secure network traffic.
+
+### 🔹 Common Network Devices
+
+* **Router** – Connects different networks (Layer 3)
+* **Switch** – Connects devices inside a LAN (Layer 2)
+* **Firewall** – Filters traffic (security gate)
+* **Server** – Provides services to clients
+* **Modem** – Connects ISP to internal network
+* **Wireless Access Point (WAP)** – Provides Wi‑Fi
+
+### 🔹 End Devices
+
+* Computer, Laptop, Mobile, Tablet
+* Each device has:
+
+  * **MAC Address** (hardware ID)
+  * **IP Address** (network ID)
+  * **NIC** (Network Interface Card)
+
+---
+
+## 3️⃣ Firewall
+
+Firewall is the **first line of defense** in a network.
+
+### What it does:
+
+* Inspects incoming & outgoing traffic
+* Blocks suspicious or unauthorized traffic
+
+📍 Usually placed between **internal network & internet**
+
+> Firewall ≠ only defense, but a critical one
+
+---
+
+## 4️⃣ Server & Client-Server Model
+
+### Server
+
+A device that provides services to other devices (**clients**).
+
+**Examples:**
+
+* DNS Server – resolves domain names
+* File Server – stores files
+* Mail Server – handles emails
+
+### Client-Server Flow
+
+Client → Request → Server → Response
+
+---
+
+## 5️⃣ Hub vs Switch
+
+### Hub (Legacy)
+
+* Broadcasts data to all devices
+* Low security
+* Easy eavesdropping
+
+### Switch (Modern)
+
+* Sends data only to intended device
+* Uses **MAC address table**
+* Faster & more secure
+
+📌 Works at **Data Link Layer (Layer 2)**
+
+---
+
+## 6️⃣ Router
+
+### What Router Does
+
+* Routes data between different networks
+* Uses **IP addresses** to make decisions
+
+📌 Works at **Network Layer (Layer 3)**
+
+Many routers include **firewall features**
+
+---
+
+## 7️⃣ Modem
+
+* Connects ISP to your network
+* Converts signals to digital data
+
+Typical flow:
+ISP → Modem → Router → Internal Network
+
+---
+
+## 8️⃣ Wireless Access Point (WAP)
+
+* Broadcasts Wi‑Fi using radio waves
+* Connects wireless devices to wired network
+
+---
+
+## 9️⃣ Network Diagram
+
+A **visual map** of the network.
+
+### Shows:
+
+* Device placement
+* Connections
+* Traffic flow
+
+### Used by Security Analysts to:
+
+* Understand structure
+* Identify vulnerabilities
+* Plan defenses
+
+---
+
+## ☁️ Cloud Computing
+
+### On-Premise Network
+
+* Hardware hosted in office
+* High cost & maintenance
+* Hard to scale
+
+### Cloud Computing
+
+Using **remote servers via internet**.
+
+**CSP Examples:**
+
+* AWS
+* Google Cloud
+* Microsoft Azure
+
+---
+
+## Cloud Service Models
+
+| Model | You Manage        |
+| ----- | ----------------- |
+| SaaS  | Nothing           |
+| PaaS  | Code              |
+| IaaS  | OS + Applications |
+
+---
+
+## Hybrid & Multi-Cloud
+
+* **Hybrid Cloud:** On‑prem + Cloud (most common)
+* **Multi‑Cloud:** Multiple CSPs
+
+---
+
+## Software-Defined Networking (SDN)
+
+Traditional → Physical control
+Modern → Software control
+
+SDN includes:
+
+* Virtual routers
+* Virtual switches
+* Virtual firewalls
+* Virtual IDS/IPS
+
+### Benefits
+
+* Fast configuration
+* Scalable
+* Cloud‑friendly
+
+---
+
+## TCP/IP Communication Basics
+
+### Data Packet Structure
+
+* Header (IP, MAC)
+* Body (data)
+* Footer (end signal)
+
+---
+
+## TCP (Transmission Control Protocol)
+
+**Reliable & connection‑oriented**
+
+### Key Features
+
+* 3‑Way Handshake (SYN → SYN‑ACK → ACK)
+* Packet ordering
+* Retransmission
+* Flow control
+* Error detection
+
+🔐 Attacks:
+
+* SYN Flood
+* Session Hijacking
+
+---
+
+## IP (Internet Protocol)
+
+### What IP Does
+
+* Logical addressing
+* Packet routing
+
+### IP Does NOT
+
+* Guarantee delivery
+* Maintain order
+
+🔐 Threats:
+
+* IP spoofing
+* Packet sniffing
+
+---
+
+## Ports
+
+| Range       | Type       |
+| ----------- | ---------- |
+| 0–1023      | Well-known |
+| 1024–49151  | Registered |
+| 49152–65535 | Dynamic    |
+
+### Common Ports
+
+* 80 – HTTP
+* 443 – HTTPS
+* 22 – SSH
+* 25 – SMTP
+* 53 – DNS
+
+---
+
+## TCP/IP Model Layers
+
+1. **Network Access** – Ethernet, Wi‑Fi, MAC
+2. **Internet** – IP, routing
+3. **Transport** – TCP, UDP, ports
+4. **Application** – HTTP, DNS, SMTP
+
+---
+
+## IP Address vs MAC Address
+
+| Feature | IP       | MAC      |
+| ------- | -------- | -------- |
+| Purpose | Location | Identity |
+| Scope   | Network  | Local    |
+| Changes | Yes      | No       |
+
+---
+
+## IPv4 vs IPv6
+
+| Feature   | IPv4    | IPv6    |
+| --------- | ------- | ------- |
+| Size      | 32‑bit  | 128‑bit |
+| Addresses | ~4.3B   | Huge    |
+| Security  | Limited | Better  |
+
+---
+
+## Security Analyst Key Takeaways
+
+* Network diagrams reveal attack surface
+* Switch > Hub for security
+* Firewall is critical
+* TCP ensures reliability
+* IP enables routing
+* Ports define application traffic
+
+---
+
+## 🧠 One‑Line Memory Trick
+
+**Devices → Switch → Router → Internet**
+
+**Firewall protects → Server serves → Diagram explains**
+
+---
+
+✅ *GitHub‑ready, exam‑focused, beginner‑friendly notes*
+
+
+
+
+
+
+Module 2 : Network Operations
+# 🌐 Network & Network Security — GitHub Notes
+
+> **Source:** Google Cybersecurity Certificate – *Connect and Protect: Networks and Network Security*
+>
+> **Language:** Bangla + English (easy + exam-ready)
+
+---
+
+## 1️⃣ What is a Network?
+
+A **network** is a system where multiple devices communicate and exchange data.
+
+* Data is sent as **packets**
+* A packet contains:
+
+  * **Source** (who sends)
+  * **Destination** (who receives)
+  * **Data (body)**
+
+---
+
+## 2️⃣ Network Devices (Core Components)
+
+Devices that control, forward, and secure network traffic.
+
+### 🔹 Common Network Devices
+
+* **Router** – Connects different networks (Layer 3)
+* **Switch** – Connects devices inside a LAN (Layer 2)
+* **Firewall** – Filters traffic (security gate)
+* **Server** – Provides services to clients
+* **Modem** – Connects ISP to internal network
+* **Wireless Access Point (WAP)** – Provides Wi‑Fi
+
+### 🔹 End Devices
+
+* Computer, Laptop, Mobile, Tablet
+* Each device has:
+
+  * **MAC Address** (hardware ID)
+  * **IP Address** (network ID)
+  * **NIC** (Network Interface Card)
+
+---
+
+## 3️⃣ Firewall
+
+Firewall is the **first line of defense** in a network.
+
+### What it does:
+
+* Inspects incoming & outgoing traffic
+* Blocks suspicious or unauthorized traffic
+
+📍 Usually placed between **internal network & internet**
+
+> Firewall ≠ only defense, but a critical one
+
+---
+
+## 4️⃣ Server & Client-Server Model
+
+### Server
+
+A device that provides services to other devices (**clients**).
+
+**Examples:**
+
+* DNS Server – resolves domain names
+* File Server – stores files
+* Mail Server – handles emails
+
+### Client-Server Flow
+
+Client → Request → Server → Response
+
+---
+
+## 5️⃣ Hub vs Switch
+
+### Hub (Legacy)
+
+* Broadcasts data to all devices
+* Low security
+* Easy eavesdropping
+
+### Switch (Modern)
+
+* Sends data only to intended device
+* Uses **MAC address table**
+* Faster & more secure
+
+📌 Works at **Data Link Layer (Layer 2)**
+
+---
+
+## 6️⃣ Router
+
+### What Router Does
+
+* Routes data between different networks
+* Uses **IP addresses** to make decisions
+
+📌 Works at **Network Layer (Layer 3)**
+
+Many routers include **firewall features**
+
+---
+
+## 7️⃣ Modem
+
+* Connects ISP to your network
+* Converts signals to digital data
+
+Typical flow:
+ISP → Modem → Router → Internal Network
+
+---
+
+## 8️⃣ Wireless Access Point (WAP)
+
+* Broadcasts Wi‑Fi using radio waves
+* Connects wireless devices to wired network
+
+---
+
+## 9️⃣ Network Diagram
+
+A **visual map** of the network.
+
+### Shows:
+
+* Device placement
+* Connections
+* Traffic flow
+
+### Used by Security Analysts to:
+
+* Understand structure
+* Identify vulnerabilities
+* Plan defenses
+
+---
+
+## ☁️ Cloud Computing
+
+### On-Premise Network
+
+* Hardware hosted in office
+* High cost & maintenance
+* Hard to scale
+
+### Cloud Computing
+
+Using **remote servers via internet**.
+
+**CSP Examples:**
+
+* AWS
+* Google Cloud
+* Microsoft Azure
+
+---
+
+## Cloud Service Models
+
+| Model | You Manage        |
+| ----- | ----------------- |
+| SaaS  | Nothing           |
+| PaaS  | Code              |
+| IaaS  | OS + Applications |
+
+---
+
+## Hybrid & Multi-Cloud
+
+* **Hybrid Cloud:** On‑prem + Cloud (most common)
+* **Multi‑Cloud:** Multiple CSPs
+
+---
+
+## Software-Defined Networking (SDN)
+
+Traditional → Physical control
+Modern → Software control
+
+SDN includes:
+
+* Virtual routers
+* Virtual switches
+* Virtual firewalls
+* Virtual IDS/IPS
+
+### Benefits
+
+* Fast configuration
+* Scalable
+* Cloud‑friendly
+
+---
+
+## TCP/IP Communication Basics
+
+### Data Packet Structure
+
+* Header (IP, MAC)
+* Body (data)
+* Footer (end signal)
+
+---
+
+## TCP (Transmission Control Protocol)
+
+**Reliable & connection‑oriented**
+
+### Key Features
+
+* 3‑Way Handshake (SYN → SYN‑ACK → ACK)
+* Packet ordering
+* Retransmission
+* Flow control
+* Error detection
+
+🔐 Attacks:
+
+* SYN Flood
+* Session Hijacking
+
+---
+
+## IP (Internet Protocol)
+
+### What IP Does
+
+* Logical addressing
+* Packet routing
+
+### IP Does NOT
+
+* Guarantee delivery
+* Maintain order
+
+🔐 Threats:
+
+* IP spoofing
+* Packet sniffing
+
+---
+
+## Ports
+
+| Range       | Type       |
+| ----------- | ---------- |
+| 0–1023      | Well-known |
+| 1024–49151  | Registered |
+| 49152–65535 | Dynamic    |
+
+### Common Ports
+
+* 80 – HTTP
+* 443 – HTTPS
+* 22 – SSH
+* 25 – SMTP
+* 53 – DNS
+
+---
+
+## TCP/IP Model Layers
+
+1. **Network Access** – Ethernet, Wi‑Fi, MAC
+2. **Internet** – IP, routing
+3. **Transport** – TCP, UDP, ports
+4. **Application** – HTTP, DNS, SMTP
+
+---
+
+## IP Address vs MAC Address
+
+| Feature | IP       | MAC      |
+| ------- | -------- | -------- |
+| Purpose | Location | Identity |
+| Scope   | Network  | Local    |
+| Changes | Yes      | No       |
+
+---
+
+## IPv4 vs IPv6
+
+| Feature   | IPv4    | IPv6    |
+| --------- | ------- | ------- |
+| Size      | 32‑bit  | 128‑bit |
+| Addresses | ~4.3B   | Huge    |
+| Security  | Limited | Better  |
+
+---
+
+## Security Analyst Key Takeaways
+
+* Network diagrams reveal attack surface
+* Switch > Hub for security
+* Firewall is critical
+* TCP ensures reliability
+* IP enables routing
+* Ports define application traffic
+
+---
+
+## 🧠 One‑Line Memory Trick
+
+**Devices → Switch → Router → Internet**
+
+**Firewall protects → Server serves → Diagram explains**
+
+---
+
+✅ *GitHub‑ready, exam‑focused, beginner‑friendly notes*
+
+---
+
+# 🌐 Network Protocols, Security & VPN — Exam-Ready Notes (Short + Clear)
+
+## 🔹 What is a Network Protocol?
+
+A **network protocol** is a set of rules that define:
+
+* How data is sent
+* In what order
+* Data format
+* What happens after receiving data
+
+🧠 Think: **Traffic rules of the Internet** 🚦
+
+---
+
+## 🧩 Protocol Categories (3 Types)
+
+### 1️⃣ Communication Protocols
+
+Used to **send & receive data**
+
+### 2️⃣ Management Protocols
+
+Used to **monitor, manage & troubleshoot networks**
+
+### 3️⃣ Security Protocols
+
+Used to **protect data using encryption & authentication**
+
+---
+
+## 📱 Application Layer Protocols (Directly used by apps)
+
+| Protocol | Full Form                           | Port     | Use                  | Security        |
+| -------- | ----------------------------------- | -------- | -------------------- | --------------- |
+| HTTP     | HyperText Transfer Protocol         | 80       | Web pages            | ❌ Not secure    |
+| HTTPS    | HyperText Transfer Protocol Secure  | 443      | Secure web           | ✅ TLS/SSL       |
+| FTP      | File Transfer Protocol              | 21       | File transfer        | ❌ Plaintext     |
+| SFTP     | SSH File Transfer Protocol          | 22       | Secure file transfer | ✅ Encrypted     |
+| SMTP     | Simple Mail Transfer Protocol       | 25 / 587 | Send email           | ⚠️ Needs TLS    |
+| POP3     | Post Office Protocol v3             | 110      | Download email       | ❌ Old           |
+| IMAP     | Internet Message Access Protocol    | 143      | Sync email           | ⚠️ Needs TLS    |
+| DNS      | Domain Name System                  | 53       | Name → IP            | ⚠️ Spoofable    |
+| DHCP     | Dynamic Host Configuration Protocol | —        | Assign IP            | ⚠️ Trust based  |
+| SNMP     | Simple Network Management Protocol  | —        | Monitoring           | ⚠️ Misuse risk  |
+| NTP      | Network Time Protocol               | 123      | Time sync            | ⚠️ Time attacks |
+| Telnet   | Teletype Network                    | 23       | Remote access        | ❌ Insecure      |
+| SSH      | Secure Shell                        | 22       | Secure remote access | ✅ Encrypted     |
+
+---
+
+## 🚚 Transport Layer Protocols
+
+### ✅ TCP — Transmission Control Protocol
+
+* Reliable & ordered delivery
+* Connection-oriented (3-way handshake)
+* Used by: HTTP, HTTPS, FTP, SMTP
+
+### ⚡ UDP — User Datagram Protocol
+
+* Fast, no guarantee
+* Connectionless
+* Used by: DNS, VoIP, Streaming, Games
+
+---
+
+## 🌍 Internet Layer Protocols
+
+| Protocol | Full Form                         | Purpose              |
+| -------- | --------------------------------- | -------------------- |
+| IP       | Internet Protocol                 | Addressing & routing |
+| ICMP     | Internet Control Message Protocol | Errors, ping         |
+| IPsec    | Internet Protocol Security        | Encrypted IP traffic |
+
+---
+
+## 🖧 Network Access Layer Protocols
+
+| Protocol | Full Form                   | Purpose           |
+| -------- | --------------------------- | ----------------- |
+| ARP      | Address Resolution Protocol | IP → MAC          |
+| Ethernet | —                           | Wired LAN         |
+| Wi-Fi    | IEEE 802.11                 | Wireless LAN      |
+| PPP      | Point-to-Point Protocol     | Direct connection |
+
+---
+
+## 🔐 Security Protocols (Analyst Focus)
+
+| Protocol | Full Meaning               | Use               |
+| -------- | -------------------------- | ----------------- |
+| SSL      | Secure Sockets Layer       | Old encryption    |
+| TLS      | Transport Layer Security   | Modern encryption |
+| HTTPS    | HTTP over TLS              | Secure web        |
+| SSH      | Secure Shell               | Secure login      |
+| SFTP     | SSH File Transfer Protocol | Secure files      |
+| IPsec    | Internet Protocol Security | VPN, tunnels      |
+
+⚠️ **Encryption does NOT hide IP addresses**
+
+---
+
+## 📡 Wi-Fi Security Protocols (Evolution)
+
+| Protocol | Year | Encryption | Status        |
+| -------- | ---- | ---------- | ------------- |
+| WEP      | 1999 | Weak       | ❌ Broken      |
+| WPA      | 2003 | TKIP       | ❌ Vulnerable  |
+| WPA2     | 2004 | AES        | ⚠️ Acceptable |
+| WPA3     | 2018 | SAE + AES  | ✅ Best        |
+
+### WPA Modes
+
+* **Personal** → Shared password (Home)
+* **Enterprise** → Individual login (Business)
+
+---
+
+## 🛡️ VPN — Virtual Private Network
+
+### Why VPN?
+
+* Hides public IP
+* Encrypts data
+* Prevents tracking
+
+### How VPN Works
+
+* Device ↔ VPN Server ↔ Internet
+* Uses **encryption + tunneling + encapsulation**
+
+---
+
+## 🔐 VPN Types
+
+### 1️⃣ Remote Access VPN
+
+* User ↔ VPN server
+* Personal & enterprise use
+
+### 2️⃣ Site-to-Site VPN
+
+* Network ↔ Network
+* Uses **IPsec**
+
+---
+
+## 🔑 VPN Protocols
+
+| Protocol  | Use          | Speed  | Notes          |
+| --------- | ------------ | ------ | -------------- |
+| IPsec     | Site-to-Site | Medium | Older, trusted |
+| WireGuard | Both         | Fast   | Modern, simple |
+
+---
+
+## 🧱 Security Zones
+
+Internet
+↓
+Uncontrolled Zone
+↓
+DMZ (Public servers)
+↓
+Internal Network
+↓
+Restricted Zone (Sensitive data)
+
+---
+
+## 🔢 Subnetting & CIDR
+
+### Subnetting
+
+* Large network → smaller networks
+* Improves **security + performance**
+
+### CIDR — Classless Inter-Domain Routing
+
+Format: `IP/Prefix`
+Example: `192.168.1.0/24`
+
+Benefits:
+
+* Saves IPv4
+* Flexible
+* Smaller routing tables
+
+---
+
+## 🧍 Proxy Server
+
+| Type          | Purpose          |
+| ------------- | ---------------- |
+| Forward Proxy | Protects users   |
+| Reverse Proxy | Protects servers |
+| Email Proxy   | Filters spam     |
+
+---
+
+## 🔥 Firewalls
+
+| Type      | Feature             |
+| --------- | ------------------- |
+| Stateless | Rule-based          |
+| Stateful  | Tracks sessions     |
+| NGFW      | DPI, IPS, App-aware |
+
+---
+
+## ✅ Final One-Look Takeaways
+
+* Protocols = rules of networking
+* TCP = reliable, UDP = fast
+* HTTPS, SSH, VPN = security backbone
+* WPA3 > WPA2 > WPA > WEP
+* Subnetting + Security zones = defense strategy
+* Proxy, Firewall, VPN = core protection tools
+
+📌 **Perfect for GitHub, exams & interviews**
+
+
+
+
+
+
+
+Module 3: Secure Against Network intrusions
+
+
+
+
+
+Module 4: Security Hardening
+
