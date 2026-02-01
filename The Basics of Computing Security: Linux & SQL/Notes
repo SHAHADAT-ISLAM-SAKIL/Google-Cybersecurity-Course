@@ -1,0 +1,268 @@
+📘 Course: The Basics of Computing Security
+(Linux & SQL focus)
+
+এই course মূলত শেখায়:
+
+একজন entry-level security analyst কীভাবে
+Linux system আর Database (SQL) securely handle করে
+
+1️⃣ Why Linux & SQL matter in Cybersecurity
+PDF কী বোঝাচ্ছে:
+
+Most servers → Linux
+
+Logs, user data, alerts → Databases (SQL)
+
+👉 তাই:
+
+Security analyst মানেই
+Linux terminal + SQL query
+
+2️⃣ Linux Basics (Security Perspective)
+
+PDF Linux কে শুধু OS না বলে:
+
+Security control system
+
+🔹 Linux directory structure (important)
+
+Common folders:
+
+/home → user files
+
+/etc → config files ⚠️
+
+/var/log → logs 🔥
+
+/bin, /usr/bin → commands
+
+👉 Security analyst সবচেয়ে বেশি দেখে:
+
+/var/log
+
+🔹 Linux commands (PDF covers)
+ls
+
+👉 file list দেখার জন্য
+
+cd
+
+👉 directory change
+
+pwd
+
+👉 current location
+
+cat, less
+
+👉 file content দেখা (logs)
+
+🔹 Why logs important?
+
+PDF বলছে:
+
+Logs = evidence
+
+Example:
+
+Login attempt
+
+Error
+
+System activity
+
+3️⃣ Linux Permissions (Very Important)
+
+PDF এখানে core security concept শেখায়।
+
+Permission types:
+
+r = read
+
+w = write
+
+x = execute
+
+Permission applies to:
+
+User
+
+Group
+
+Others
+
+Example:
+
+-rwxr-x---
+
+
+👉 Meaning:
+
+Owner: full access
+
+Group: read + execute
+
+Others: no access
+
+🔹 chmod (Change permission)
+
+PDF explains:
+
+Principle of Least Privilege
+
+মানে:
+
+যেটুকু দরকার, তার বেশি access না
+
+4️⃣ Users & Groups (Access Control)
+
+PDF বলে:
+
+Not everyone should access everything
+
+Users:
+
+Individual accounts
+
+Groups:
+
+Role-based access
+
+Example:
+
+analyst
+
+admin
+
+developer
+
+👉 Security benefit:
+
+Easy control
+
+Less damage if compromised
+
+5️⃣ SQL Basics (Security Focus)
+
+PDF SQL শেখায় data query করার জন্য, hacking না।
+
+🔹 What is SQL?
+
+SQL = Structured Query Language
+Used to:
+
+Read data
+
+Filter data
+
+Investigate incidents
+
+🔹 Common SQL commands
+SELECT
+
+👉 Data view
+
+SELECT * FROM logs;
+
+WHERE
+
+👉 Condition apply
+
+SELECT * FROM users WHERE role='admin';
+
+ORDER BY
+
+👉 Sort data
+
+LIMIT
+
+👉 Result limit
+
+6️⃣ SQL for Security Investigation
+
+PDF security angle দেখায় 👇
+
+Example use:
+
+Failed login count
+
+Suspicious IP
+
+Unauthorized access
+
+Example:
+
+SELECT * FROM logins
+WHERE status='failed';
+
+
+👉 Analyst suspicious behavior detect করে।
+
+7️⃣ SQL Injection (Concept only)
+
+PDF hacking শেখায় না ❌
+বরং বলে:
+
+Improper SQL handling = vulnerability
+
+SQL Injection কী?
+
+User input দিয়ে malicious SQL execute করা
+
+👉 Defense:
+
+Prepared statements
+
+Input validation
+
+8️⃣ Linux + SQL Together (Real Job Flow)
+
+PDF এখানে real-world flow বোঝায়:
+
+1️⃣ Linux server এ logs
+2️⃣ Logs database এ store
+3️⃣ SQL দিয়ে query
+4️⃣ Incident detect
+5️⃣ Report তৈরি
+
+9️⃣ Documentation & Accuracy
+
+PDF বারবার বলে:
+
+Accuracy matters more than speed
+
+Wrong command = data loss
+
+Wrong query = wrong conclusion
+
+👉 Analyst calm + careful হতে হবে
+
+🔟 Key Security Principles (Hidden but important)
+
+PDF teaches:
+
+Least privilege
+
+Accountability
+
+Audit trail
+
+Evidence handling
+
+🧠 One-page Exam Cheat Summary
+
+Linux = server OS
+
+Logs = evidence
+
+Permissions = access control
+
+Users/groups = role security
+
+SQL = investigation tool
+
+WHERE + SELECT = analyst power
+
+SQL injection = vulnerability
+
+Accuracy > speed
