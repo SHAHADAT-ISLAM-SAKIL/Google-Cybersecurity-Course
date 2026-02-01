@@ -1,0 +1,229 @@
+🐍 Fundamentals of Python for Cybersecurity — Concepts Explained (Step-by-Step)
+⚙️ 1️⃣ Python in Cybersecurity — Intro & Use Cases
+Video-র মূল বক্তব্য:
+
+Python শুধুমাত্র programming language নয় — cybersecurity tasks automate করার জন্য real world এ widely used।
+Security analysts repetitive কাজগুলো Python দিয়ে 자동 করতে পারে, যেমন log parsing, pattern detection, file analysis, etc.
+
+Why Python?
+
+✔ Easy syntax (clean & readable)
+✔ Huge library ecosystem
+✔ Works across platforms
+✔ Good for file parsing, automation & analysis
+
+Security use examples:
+
+Log file analysis
+
+Regex to extract IPs
+
+Automation of SIEM data retrieval
+
+🧠 2️⃣ Python Basics — Data Types & Variables
+🧩 Data types you’ll learn:
+Type	Meaning	Python example
+str	Text	'hello'
+int	Integer number	10
+float	Decimal number	3.14
+bool	True/False	True, False
+list	Ordered group	['a','b']
+🟢 Variables
+
+👉 Variables = data holder
+Python code:
+
+name = "Shakil"
+age = 25
+
+
+🔹 name now holds a string
+🔹 age holds number
+
+🔄 3️⃣ Conditional Statements (if)
+Used to make decisions based on conditions.
+
+Syntax:
+
+if age > 18:
+    print("Adult")
+else:
+    print("Minor")
+
+
+In cybersecurity:
+✔ Check failed login count
+✔ Alert if threshold crossed
+
+Example:
+
+failed = 5
+if failed > 3:
+    print("Check alerts!")
+
+🔁 4️⃣ Loops — Iterative Statements
+
+Loops repeat code until condition ends.
+
+A. for loop
+for i in range(5):
+    print(i)
+
+B. while loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+
+In security context:
+✔ Loop logs
+✔ Process list of IPs
+
+Example:
+
+ips = ["10.0.0.1","10.0.0.2"]
+for ip in ips:
+    print(ip)
+
+🛠️ 5️⃣ Python Functions
+
+Functions = reusable blocks of code.
+
+Syntax:
+
+def greet(name):
+    print("Hello " + name)
+    
+greet("Shakil")
+
+
+Security example:
+
+def check_fail(fails):
+    if fails > 10:
+        print("Alert!")
+
+
+👉 This way you write logic once and reuse.
+
+📚 6️⃣ Work with Strings & Lists
+Strings
+text = "failed login from 10.0.0.1"
+print(text.upper())
+
+Lists
+users = ["alice","bob","charlie"]
+for u in users:
+    print(u)
+
+
+In security:
+✔ Parse logs into words
+✔ Analyze event streams
+
+🔎 7️⃣ Regular Expressions (Regex)
+
+Regex = powerful pattern matching.
+
+Example:
+
+import re
+
+pattern = r"\d+\.\d+\.\d+\.\d+"
+match = re.findall(pattern, "Login from 10.0.0.1")
+print(match)
+
+
+🔥 This extracts IPs from text logs.
+
+📂 8️⃣ File Handling (Open/Read files)
+
+Security work often involves log files.
+
+with open("auth.log","r") as file:
+    data = file.read()
+    print(data)
+
+
+👉 with open ensures file closed automatically.
+
+Useful for:
+
+Reading system logs
+
+Searching suspicious lines
+
+Feeding logs to parser
+
+🐞 9️⃣ Debugging Python Code
+
+Debugging = fixing errors.
+
+Common tools/steps:
+
+print() debug outputs
+
+Check syntax errors
+
+Use debugger (IDE)
+
+Example:
+
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+
+🔹 Helps stabilize security scripts.
+
+🛡️ 10️⃣ Real Cybersecurity Python Examples
+Example: Count failed login entries
+count = 0
+with open("auth.log","r") as f:
+    for line in f:
+        if "failed" in line:
+            count += 1
+print("Failed count:", count)
+
+Example: Extract IP addresses
+import re
+
+ips = []
+with open("auth.log","r") as f:
+    for line in f:
+        found = re.findall(r"\d+\.\d+\.\d+\.\d+", line)
+        ips.extend(found)
+print(set(ips))  # unique IPs
+
+🧠 One-page exam / interview cheat sheet
+Key Concepts
+
+✔ Python basics: data types, variables
+✔ Logic control: if, else, loops
+✔ Functions
+✔ Strings & lists
+✔ Regex pattern matching
+✔ File read/write
+✔ Debugging techniques
+
+Example Code Patterns
+
+Count failed events
+
+count = 0
+with open("log.txt") as f:
+    for line in f:
+        if "failed" in line:
+            count +=1
+
+
+Extract IPs
+
+import re
+print(re.findall(r"\d+\.\d+\.\d+\.\d+", text))
+
+📌 Summary
+
+Python in cybersecurity is about automation and analysis — helping analysts handle logs, detect patterns, extract insights, and reduce manual effort.
