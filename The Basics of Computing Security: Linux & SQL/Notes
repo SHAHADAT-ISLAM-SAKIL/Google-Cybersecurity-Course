@@ -1,3 +1,223 @@
+🐧 LINUX COMMANDS (PDF অনুযায়ী)
+1️⃣ pwd
+
+📌 Purpose: Current directory কোথায় আছো সেটা জানা
+
+pwd
+
+
+👉 Output example:
+
+/home/analyst
+
+2️⃣ ls
+
+📌 Purpose: Directory এর ভিতরের file / folder list
+
+ls
+
+With details:
+ls -l
+
+
+👉 Permissions, owner, size দেখায় (security-important)
+
+3️⃣ cd
+
+📌 Purpose: Directory change করা
+
+cd /var/log
+
+
+👉 Logs দেখার জন্য SOC analyst খুব ব্যবহার করে
+
+4️⃣ cat
+
+📌 Purpose: File content দেখা
+
+cat auth.log
+
+
+⚠️ বড় log file হলে risky (screen flood)
+
+5️⃣ less
+
+📌 Purpose: Large file safely read করা
+
+less auth.log
+
+
+👉 Best for log analysis
+(keys: q exit, / search)
+
+6️⃣ head
+
+📌 Purpose: File-এর প্রথম কয়েক লাইন দেখা
+
+head auth.log
+
+7️⃣ tail
+
+📌 Purpose: File-এর শেষ কয়েক লাইন দেখা
+
+tail auth.log
+
+Real-time monitoring:
+tail -f auth.log
+
+8️⃣ grep
+
+📌 Purpose: Specific keyword খোঁজা (🔥 very important)
+
+grep "failed" auth.log
+
+Case-insensitive:
+grep -i "error" syslog
+
+9️⃣ chmod
+
+📌 Purpose: File permission change
+
+chmod 640 report.txt
+
+
+👉 Least Privilege principle apply হয়
+
+🔟 chown
+
+📌 Purpose: File owner change
+
+chown analyst:security report.txt
+
+🔑 Linux Permission Example (PDF concept)
+-rwxr-x---
+
+
+Meaning:
+
+User → full
+
+Group → read + execute
+
+Others → no access
+
+🗄️ SQL QUERIES (PDF অনুযায়ী)
+1️⃣ SELECT
+
+📌 Purpose: Data read করা
+
+SELECT * FROM users;
+
+2️⃣ SELECT specific columns
+SELECT username, role FROM users;
+
+3️⃣ WHERE
+
+📌 Purpose: Condition filter (🔥 must know)
+
+SELECT * FROM logins
+WHERE status = 'failed';
+
+4️⃣ AND
+
+📌 Multiple condition
+
+SELECT * FROM logins
+WHERE status='failed' AND ip_address='192.168.1.10';
+
+5️⃣ OR
+SELECT * FROM users
+WHERE role='admin' OR role='manager';
+
+6️⃣ ORDER BY
+
+📌 Result sort করা
+
+SELECT * FROM logins
+ORDER BY timestamp DESC;
+
+7️⃣ LIMIT
+
+📌 Output control
+
+SELECT * FROM logins
+LIMIT 10;
+
+8️⃣ COUNT
+
+📌 Number of events count
+
+SELECT COUNT(*) FROM logins
+WHERE status='failed';
+
+
+👉 Brute-force detection
+
+9️⃣ GROUP BY
+
+📌 Pattern analysis
+
+SELECT ip_address, COUNT(*)
+FROM logins
+GROUP BY ip_address;
+
+🔟 SQL Injection (Concept example – not to attack)
+SELECT * FROM users WHERE username = 'admin';
+
+
+⚠️ User input sanitize না করলে dangerous
+
+👉 Defense:
+
+Prepared statements
+
+Input validation
+
+🔁 Linux + SQL (PDF real-world flow)
+Linux logs → Database → SQL query → Investigation → Report
+
+
+Example:
+
+/var/log/auth.log
+
+Logs database এ store
+
+SQL দিয়ে failed login check
+
+Incident detect
+
+📄 EXAM QUICK LIST (Memorize)
+Linux:
+
+pwd, ls, cd
+
+cat, less
+
+head, tail
+
+grep
+
+chmod, chown
+
+SQL:
+
+SELECT
+
+WHERE
+
+AND / OR
+
+ORDER BY
+
+LIMIT
+
+COUNT
+
+GROUP BY
+
+
+
 📘 Course: The Basics of Computing Security
 (Linux & SQL focus)
 
