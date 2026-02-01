@@ -1,0 +1,610 @@
+Module 1 : 
+# 🛡️ Module 1: Cybersecurity Fundamentals
+
+> **Course:** Google Cybersecurity Certificate
+> **Purpose:** Clean, exam-ready, GitHub-friendly notes (Bangla + English mix)
+
+---
+
+## 🔹 Program Overview
+
+Cybersecurity হলো systems, networks, and data কে **unauthorized access, attack, damage** থেকে protect করা।
+
+এই module-এ cover করা হয়:
+
+* Core security concepts
+* Security domains
+* Network security basics
+* Computing basics
+* Assets, threats, and vulnerabilities
+
+---
+
+## 🔑 Why Security is Important (5 Core Reasons)
+
+### 1️⃣ Protects Against External & Internal Threats
+
+**Meaning:** Security system বাইরের এবং ভেতরের দুই ধরনের threat থেকে protect করে।
+
+* **External Threats:** hacker, malware, phishing, ransomware
+* **Internal Threats:** employee mistake, insider attack, accidental data leak
+
+**Example:**
+Firewall + Access Control থাকলে:
+
+* Outside hacker ঢুকতে পারে না
+* Inside employee সব data access করতে পারে না
+
+---
+
+### 2️⃣ Meets Regulatory Compliance
+
+**Meaning:** Organization আইন ও government security rules follow করে।
+
+**Examples:**
+
+* Data protection law
+* Banking regulations
+* Health data rules
+
+**Example:**
+Bank যদি customer data encrypt না করে → ❌ Law violation → 💸 Fine
+Security থাকলে → ✅ Compliance → No legal issue
+
+---
+
+### 3️⃣ Maintains & Improves Business Productivity
+
+**Meaning:** Secure system থাকলে business downtime হয় না।
+
+**Example:**
+Ransomware attack হলে:
+
+* System lock
+* Employees কাজ করতে পারে না
+
+Security থাকলে:
+
+* Attack block
+* Business smoothly চলে
+
+---
+
+### 4️⃣ Reduces Expenses
+
+**Meaning:** Early security investment future বড় loss কমায়।
+
+**Data Breach Cost Includes:**
+
+* Legal fine
+* System repair
+* Reputation damage
+
+Security থাকলে → এই extra খরচগুলো avoid করা যায়
+
+---
+
+### 5️⃣ Maintains Brand Trust
+
+**Meaning:** Customer বিশ্বাস করে যে তাদের data safe।
+
+**Example:**
+Frequent data leak → customer চলে যায়
+Strong security → trust বাড়ে → business grow করে
+
+---
+
+## 👨‍💻 Responsibilities of an Entry-Level Cybersecurity Analyst
+
+### 🔹 Monitoring & Protecting Systems
+
+* Internal network monitor করা
+* Alerts analyze করা
+* First responder হিসেবে কাজ করা
+
+**Tools:** SIEM, IDS, IPS, Logs
+
+---
+
+### 🔹 Preventing Threats
+
+* IT team এর সাথে collaborate করা
+* Prevention software install করা
+* Vulnerabilities identify ও fix করা
+* Secure development practices নিশ্চিত করা
+
+---
+
+### 🔹 Conducting Security Audits
+
+* Security records review করা
+* Access control check করা
+* Password & permission audit করা
+
+**Example:**
+সব employee যেন sensitive data access না করতে পারে
+
+---
+
+## 🔐 CIA Triad (Core Security Principle)
+
+### 1️⃣ Confidentiality
+
+Only authorized users data access করতে পারবে
+**Examples:** Encryption, Access control
+
+### 2️⃣ Integrity
+
+Data accurate ও unchanged থাকবে
+**Examples:** Hashing, Checksums
+
+### 3️⃣ Availability
+
+Authorized users সময়মতো data access পাবে
+**Examples:** Backup, Redundancy
+
+> **CIA = Foundation of Cybersecurity**
+
+---
+
+## 🧠 Core Skills for Cybersecurity Professionals
+
+### 🔹 Transferable Skills
+
+* **Communication:** Technical + non-technical audience explain করা
+* **Collaboration:** IT team, engineers, forensic analysts, managers
+* **Analysis:** Threat analyze করে solution recommend করা
+* **Problem Solving:** Root cause identify করে fix করা
+
+---
+
+### 🔹 Technical Skills
+
+* **Programming Languages:**
+
+  * Python → automation & scripting
+  * SQL → log & database analysis
+
+* **SIEM Tools:**
+  Logs collect, correlate, alerts generate
+
+* **Computer Forensics:**
+  Digital evidence identify, analyze, preserve
+
+---
+
+## 🔐 Importance of Cybersecurity (Big Picture)
+
+### 🔹 Business Continuity & Ethics
+
+* System running রাখা
+* Ethical responsibility maintain করা
+
+### 🔹 Financial Growth & Trust
+
+* User trust বাড়ে
+* Long-term business growth হয়
+
+---
+
+## 🆔 Protecting Personally Identifiable Information (PII)
+
+### 🔹 PII (Personally Identifiable Information)
+
+যে data দিয়ে একজন মানুষকে identify করা যায়:
+
+* Full name
+* Address
+* Phone number
+* Email
+* IP address
+
+### 🔹 SPII (Sensitive PII)
+
+High-risk sensitive data:
+
+* National ID / SSN
+* Medical records
+* Financial data
+* Biometric data
+
+---
+
+## 🚨 Consequences of Data Breaches
+
+### 🔹 Identity Theft
+
+* Stolen PII/SPII দিয়ে fraud
+* Financial & legal damage
+
+### 🔹 Growing Demand for Security Professionals
+
+* Data, people, systems protect করার demand বাড়ছে
+* 📈 Cybersecurity job growth > **30% by 2030**
+
+---
+
+## 📊 SIEM Tools (Quick Note)
+
+**SIEM = Security Information and Event Management**
+
+**Functions:**
+
+* Logs collect
+* Threat detect
+* Risk analyze
+* Vulnerability identify
+
+> SOC analyst-এর core tool
+
+---
+
+## ✅ Final One-Line Revision Trick
+
+```
+Security protects → Data → People → Business → Trust
+Analyst works → Monitor → Detect → Prevent → Audit → Improve
+Foundation → CIA + Skills + Tools
+```
+
+
+
+
+
+
+
+
+
+Module 2:
+# Module 2: Past Cybersecurity Attacks
+
+## Attacks in the Digital Age
+ডিজিটাল যুগে আক্রমণ শুধু কম্পিউটার ভাঙা নয়—এখন মানুষ, ডেটা, সিস্টেম, এবং বিশ্বাস—সবকিছুকেই টার্গেট করে।
+
+### 1️⃣ Digital Age-এ Attack মানে কী?
+যেকোনো ইচ্ছাকৃত কার্যক্রম যার মাধ্যমে—
+- তথ্য চুরি করা হয়
+- সিস্টেমে অননুমোদিত প্রবেশ করা হয়
+- সেবা ব্যাহত করা হয়
+- ব্যবহারকারীকে প্রতারিত করা হয়
+
+### 2️⃣ আধুনিক যুগের প্রধান Attack টাইপ
+#### 🔐 1. Phishing & Social Engineering
+- সবচেয়ে common, সবচেয়ে effective
+- Fake email / SMS / call
+- Human psychology exploit করে → Technology নয়, মানুষ target
+
+#### 🦠 2. Malware Attacks
+- Virus
+- Trojan
+- Ransomware
+- Spyware
+- একবার ঢুকলে data encrypt, steal বা destroy করে
+
+#### 🌐 3. Network-based Attacks
+- DDoS
+- Man-in-the-Middle
+- Packet sniffing
+- Network দুর্বল হলে পুরো organization ঝুঁকিতে
+
+#### 🔑 4. Credential-based Attacks
+- Brute force
+- Credential stuffing
+- Password reuse exploit
+- Weak password = open door
+
+#### ☁️ 5. Cloud & Web Application Attacks
+- SQL Injection
+- XSS
+- Misconfigured cloud storage
+- Modern apps = new attack surface
+
+---
+
+## CISSP Security Domains Mapping
+
+### 🧠 What We Covered — CISSP 8 Domain দিয়ে সহজ ব্যাখ্যা
+**Covered Topics:**  
+Viruses, Malware, Social Engineering, Digital Age, Security Domains  
+
+### 🧩 CISSP 8 Domain মনে রাখার SUPER EASY Trick
+**Sentence to remember:**  
+> “Risky Assets Are Carefully Identified, Assessed, Operated, and Developed Securely”
+
+**Mapping:**
+
+| Shortcut       | CISSP Domain                     |
+|----------------|---------------------------------|
+| Risky          | Security & Risk Management       |
+| Assets         | Asset Security                   |
+| Are Carefully  | Security Architecture & Engineering |
+| Identified     | Communication & Network Security |
+| Identified     | Identity & Access Management     |
+| Assessed       | Security Assessment & Testing    |
+| Operated       | Security Operations              |
+| Developed Securely | Software Development Security  |
+
+---
+
+### 🦠 1️⃣ Viruses & Malware — কোন Domain?
+**কী?**
+- Virus → user action দরকার
+- Malware → সব ক্ষতিকর সফটওয়্যার (virus, worm, ransomware)
+
+**CISSP Domain Mapping:**  
+- Security Operations  
+- Security Architecture & Engineering  
+
+**মনে রাখার Trick:**  
+> Malware ঢুকলে = Operations দৌড়ায়  
+
+---
+
+### 🧠 2️⃣ Social Engineering — কোন Domain?
+**কী?**
+- মানুষকে বোকা বানিয়ে attack (phishing, vishing, USB baiting)
+
+**CISSP Domain:**  
+- Security & Risk Management  
+
+**মনে রাখার Trick:**  
+> মানুষ জড়িত = Risk Management  
+
+---
+
+### 🌍 3️⃣ Digital Age — কোন Domain?
+**কী?**
+- Cloud, AI, Social media, Remote work  
+- সবকিছু connected
+
+**CISSP Domain:**  
+- Security & Risk Management  
+- Communication & Network Security  
+
+**মনে রাখার Trick:**  
+> Digital world = Network + Risk  
+
+---
+
+### 🏗️ 4️⃣ Security Domains — কেন দরকার?
+- CISSP domain মানে হলো Security কে টুকরো টুকরো করে বোঝার পদ্ধতি
+- উদাহরণ:
+  - Password attack → Network
+  - Payroll data protection → Asset
+  - Incident response → Operations
+
+**মনে রাখার Trick:**  
+> Attack চিনো → Domain চিনো → Control দাও  
+
+---
+
+### 🧠 Big Picture Table
+
+| Topic             | CISSP Domain                        | মনে রাখার কৌশল           |
+|------------------|------------------------------------|---------------------------|
+| Virus             | Security Operations                | Virus = Incident          |
+| Malware           | Architecture + Operations          | Design + Response         |
+| Social Engineering| Risk Management                     | Human = Risk              |
+| Digital Age       | Network + Risk                      | Connected = Risk          |
+| Security Domains  | All 8                               | Security map              |
+
+
+
+
+
+
+
+Module 3: 
+# Module: Introduction to Security Frameworks and Controls
+
+## 1️⃣ Key Security Objectives
+Security professionals focus on protecting an organization by managing risks and safeguarding critical information:
+
+- **Protecting PII** – Personally Identifiable Information রক্ষা করা
+- **Securing Financial Information** – ব্যাংকিং, accounting, financial data secure রাখা
+- **Identifying Security Weaknesses** – ঝুঁকি ও দুর্বলতা চিহ্নিত করা
+- **Managing Organizational Risks** – সংস্থার ঝুঁকি হ্রাস করা
+- **Aligning Security with Business Goals** – ব্যবসার লক্ষ্য অনুযায়ী security implement করা
+
+---
+
+## 2️⃣ Four Core Components of Security Frameworks
+A framework organizes security practices using these four building blocks:
+
+| Component      | Description |
+|----------------|-------------|
+| Communication  | Security info sharing across teams and stakeholders |
+| Processes      | Standard procedures for managing security events |
+| Guidelines     | Recommended approaches for consistent security practice |
+| Goals          | Desired outcomes, such as risk reduction and compliance |
+
+---
+
+## 3️⃣ Security Controls
+**Definition:**  
+Security controls are safeguards designed to reduce specific security risks.  
+
+**Example:**  
+- Employees complete privacy training to reduce data breaches.  
+
+**Purpose:**  
+- Managing organizational security  
+- Ensuring a low level of risk  
+
+---
+
+## 4️⃣ Secure Design
+- Focused on embedding security from the beginning in systems, processes, and applications
+- Includes principles like least privilege, defense-in-depth, and secure coding practices
+
+---
+
+## 5️⃣ Assets and Risk Management
+### Defining an Asset
+- Anything of value to an organization  
+- Value determined by associated costs and risks  
+
+### Threat Actors
+- Understanding motives of threat actors is crucial  
+- Disgruntled employees pose high internal risk due to access to sensitive data  
+
+---
+
+## 6️⃣ NIST Cybersecurity Framework (NIST CSF)
+### 🔐 What is NIST CSF?
+- Voluntary, trusted **security framework**  
+- Helps organizations:
+  - Identify cyber risks  
+  - Plan risk reduction  
+  - Manage short-term and long-term security  
+
+**Simple way to remember:**  
+> NIST CSF = “Cybersecurity চালানোর রোডম্যাপ”
+
+### 🧩 5 Core Functions of NIST CSF (Memory Trick: IPDRR)
+| Function  | Meaning |
+|-----------|--------|
+| Identify  | কী asset আছে, risk কোথায় |
+| Protect   | Security ব্যবস্থা নেওয়া |
+| Detect    | Attack হচ্ছে কিনা ধরা |
+| Respond   | Attack হলে কী করবো |
+| Recover   | স্বাভাবিক অবস্থায় ফেরা |
+
+### 🏢 Example: Bank Scenario Using NIST CSF
+1. **Identify** → Customer data, servers, ATMs চিহ্নিত  
+2. **Protect** → Encryption, firewall, MFA  
+3. **Detect** → SIEM, log monitoring  
+4. **Respond** → Incident response team কাজ শুরু করে  
+5. **Recover** → Backup থেকে data restore  
+
+### ⚖️ NIST CSF vs Law
+| Aspect         | NIST CSF                  |
+|----------------|--------------------------|
+| Is it a law?   | ❌ No                    |
+| Mandatory?     | ❌ No                    |
+| Used by        | Organizations worldwide  |
+| Purpose        | Risk management          |
+
+**Voluntary Framework:**  
+- Provides standards, guidelines, best practices  
+- Baseline for security teams  
+
+**Mitigating Risk:**  
+- Access control, least privilege, and monitoring reduce internal threats  
+
+---
+
+## 7️⃣ Ethics in Cybersecurity
+### Confidentiality
+- Protect proprietary and private info (PII)  
+- Avoid unauthorized sharing or access  
+
+### Privacy Protections
+- Safeguard personal data even if superiors request otherwise  
+
+### Legal and Professional Responsibilities
+- Follow laws and regulations strictly  
+- Avoid negligence, especially with sensitive data  
+
+### Continuous Critical Thinking
+- Technology and attacker tactics evolve rapidly  
+- Ethical compass + critical thinking needed to mitigate risks  
+
+---
+
+
+
+
+Module 4 : Cybersecurity tools and programming languages
+# Module: Cybersecurity Tools, Logs, Programming & Portfolio
+
+## 1️⃣ Understanding Logs
+- **Definition:** Logs are records of events within an organization's systems, e.g., employee sign-ins, web service access.
+- **Purpose:** Crucial for identifying vulnerabilities and potential breaches.
+
+### Security Information and Event Management (SIEM) Tools
+- Collect and analyze log data in real-time
+- Monitor critical activities and detect potential breaches
+- **Examples:**
+  - **Splunk Enterprise** – Self-hosted data analysis platform
+  - **Google Chronicle** – Cloud-native SIEM tool
+
+### Other Key Security Tools
+- **Playbooks:** Manuals with step-by-step instructions for operational actions (e.g., incident response)
+- **Network Protocol Analyzers / Packet Sniffers:** Tools like `tcpdump`, `Wireshark` to capture and analyze network traffic
+
+---
+
+## 2️⃣ Programming for Efficiency
+- Automates repetitive tasks with high accuracy
+- Reduces human error and saves time
+- **Common uses in cybersecurity:**
+  - Log analysis
+  - Automation of monitoring and response
+
+### Linux Operating System
+- Open-source OS, primarily command-line interface
+- Used by security analysts for examining logs and system activities
+
+### Programming Languages
+- **SQL:** Query, retrieve, and manage large databases  
+- **Python:** Automate repetitive and precision-critical tasks  
+
+---
+
+## 3️⃣ Cybersecurity Portfolio
+### 🔹 Portfolio Overview
+- Shows proof of your work, skills, and experience
+- **Not the same as a resume:**
+  - Resume → 1–2 pages summary
+  - Portfolio → Detailed evidence of work
+
+**Purpose:**
+- Job applications
+- Show passion and seriousness
+- Advantage in interviews
+- Stand out in entry-level roles
+
+---
+
+### 📁 Portfolio Options
+| Option                       | Description | Pros | Cons / Notes |
+|-------------------------------|------------|------|--------------|
+| **Documents Folder**          | Folder on PC/Laptop | Full control, offline access, fast | Hard to share online |
+| **Google Drive / Dropbox**    | Cloud storage | Easy sharing, auto-update, backup safe | Best for beginners |
+| **Google Sites (Website)**    | Portfolio website | Professional look, responsive, embed docs/labs/screenshots | Requires setup |
+| **Git Repository (Best)**     | GitHub/GitLab/Bitbucket | Shows technical skills, labs, notes, case studies | Requires Git knowledge |
+
+---
+
+### 🧪 Portfolio Content
+**Include during course:**
+- Professional statement
+- Security audit reports
+- Network security analysis
+- Linux file permission labs
+- SQL query filtering
+- Vulnerability identification (small business)
+- Incident handler journal
+- Log / text file analysis
+- Updated resume
+
+---
+
+## 4️⃣ Professional Statement Guide
+**Steps to write:**
+1. List 2–3 strengths (e.g., programming, communication, time management)
+2. List 1–2 values (e.g., protecting organizations, adhering to laws)
+3. Answer clarifying questions:
+   - What interests me in cybersecurity?
+   - Who is the audience? (Recruiters, orgs, government)
+   - How do strengths and values support organizational security?
+
+**Formula:**  
+> Professional Statement = Who you are + What you know + Why you matter to the company
+
+**Example Professional Statement:**  
+> “My name is MD Shahadat Islam Sakil. I am an aspiring cybersecurity professional passionate about protecting sensitive data and reducing cyber risks. I enjoy analyzing complex problems, monitoring security events, and implementing solutions that strengthen the confidentiality, integrity, and availability of systems. I am developing hands-on skills in log analysis, SIEM fundamentals, and incident response while upholding ethical practices and compliance standards. My goal is to support organizations in creating secure, resilient digital environments.”
+
+
+
