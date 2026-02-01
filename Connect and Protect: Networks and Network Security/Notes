@@ -1,0 +1,1244 @@
+Module 1 : Security domains
+📘 CYBERSECURITY NOTES
+(Course 2 – Module 1 | Google Cybersecurity Certificate)
+🔐 Security Domains Cybersecurity Analysts Need to Know
+
+Cybersecurity কাজকে organize করার জন্য Certified Information Systems Security Professional(CISSP) অনুযায়ী ৮টা Security Domain আছে।
+একজন analyst হিসেবে এগুলো জানা mandatory।
+
+CISSP মানে হলো:
+“আপনি cybersecurity-এর সব core areas বোঝেন এবং বড় organization-এর security design ও management করতে পারেন”
+— এমন একটা professional proof।
+1️⃣ Domain 1: Security & Risk Management
+🔹 Key Concept: Security Posture
+
+Security posture = organization কতটা ভালোভাবে তার critical assets protect করতে পারে এবং change-এ react করতে পারে।
+
+Includes:
+
+Security goals & objectives
+
+Risk mitigation processes
+
+Compliance (laws, regulations)
+
+Business continuity plans
+
+Legal regulations
+
+Ethics (professional + organizational)
+
+🔹 InfoSec (Information Security)
+
+InfoSec = information secure করার process
+
+Includes:
+
+Incident response
+
+Vulnerability management
+
+Application security
+
+Cloud security
+
+Infrastructure security
+
+📌 Example: GDPR অনুযায়ী PII handling change করা
+
+2️⃣ Domain 2: Asset Security
+🔹 Asset Security কী?
+
+Organization-এর physical & digital assets secure রাখা।
+
+Covers:
+
+Storage
+
+Maintenance
+
+Retention
+
+Destruction
+
+Analyst duties:
+
+Asset tracking
+
+Security impact analysis
+
+Backup & recovery planning
+
+Data exposure management
+
+📌 Example: Backup রাখা যেন incident হলে restore করা যায়
+
+3️⃣ Domain 3: Security Architecture & Engineering
+🔹 Focus:
+
+Data security নিশ্চিত করার জন্য tools, systems, processes design
+
+Important Concept: Shared Responsibility
+
+Security সবার দায়িত্ব, শুধু security team না।
+
+Design Principles:
+
+Threat modeling
+
+Least privilege
+
+Defense in depth
+
+Fail securely
+
+Separation of duties
+
+Keep it simple
+
+Zero trust
+
+Trust but verify
+
+📌 Example: SIEM tool দিয়ে unusual login detect করা
+
+4️⃣ Domain 4: Communication & Network Security
+🔹 Focus:
+
+Physical networks
+
+Wireless communications
+
+On-site, remote & cloud access
+
+Challenges:
+
+Remote / hybrid work
+
+Secure external connections
+
+Controls:
+
+Restricted network access
+
+Secure remote authentication
+
+📌 Goal: Travel বা remote কাজের সময়ও network secure রাখা
+
+5️⃣ Domain 5: Identity & Access Management (IAM)
+🔹 Purpose:
+
+User identity verify করা
+
+Authorized access দেওয়া
+
+Unauthorized access block করা
+
+Core Principle:
+
+Principle of Least Privilege
+
+📌 Example:
+Customer service agent শুধু phone number দেখতে পারবে, কাজ শেষ হলে access remove।
+
+6️⃣ Domain 6: Security Assessment & Testing
+🔹 Focus:
+
+Risk, threat, vulnerability identify করা
+
+Activities:
+
+Security assessments
+
+Penetration testing
+
+Security control testing
+
+Security audits
+
+📌 Example: User permissions audit করা
+
+7️⃣ Domain 7: Security Operations
+🔹 Focus:
+
+Incident হওয়ার পর detect, respond, investigate
+
+Includes:
+
+Training & awareness
+
+Reporting & documentation
+
+IDS / IPS
+
+SIEM tools
+
+Log management
+
+Incident management
+
+Playbooks
+
+Digital forensics
+
+Lessons learned
+
+📌 Example: Office hours এর বাইরে massive data access detect করা
+
+8️⃣ Domain 8: Software Development Security
+🔹 Focus:
+
+Secure coding & secure applications
+
+Important Rule:
+
+Security must be part of entire SDLC, not afterthought
+
+Activities:
+
+Secure design
+
+Application security testing
+
+Code review
+
+Pen testing
+
+QA validation
+
+📌 Example: Medical device-এ encryption properly configured কিনা check করা
+
+⚠️ Managing Common Threats, Risks & Vulnerabilities
+🔹 Asset Definition
+
+Asset = Organization-এর valuable item
+
+Digital Assets:
+
+SSN / National ID
+
+DOB
+
+Bank details
+
+Address
+
+Physical Assets:
+
+Servers
+
+Desktops
+
+Payment kiosks
+
+Office space
+
+🔹 Risk Management Strategies
+
+1️⃣ Acceptance – Risk accept করা
+2️⃣ Avoidance – Risk avoid করা
+3️⃣ Transference – Third party তে shift করা
+4️⃣ Mitigation – Impact কমানো
+
+Frameworks:
+
+NIST RMF
+
+HITRUST
+
+🔹 Threats
+Common Threat Types:
+
+Insider threats
+
+Advanced Persistent Threats (APT)
+
+🔹 Risks
+
+Risk = Anything that impacts CIA (Confidentiality, Integrity, Availability)
+
+Risk factors:
+
+External risks (hackers)
+
+Internal risks (employees, vendors)
+
+Legacy systems
+
+Multiparty risk (third-party vendors)
+
+Software compliance issues
+
+📌 OWASP Top 10 → Web risks list
+
+🔹 Vulnerabilities
+
+Vulnerability = Weakness exploited by threat
+
+Common Vulnerabilities:
+
+ProxyLogon
+
+ZeroLogon
+
+Log4Shell
+
+PetitPotam
+
+Security logging failures
+
+Server-side request forgery (SSRF)
+
+Analyst Role:
+
+Vulnerability management
+
+Patch & update monitoring
+
+Continuous monitoring
+
+📌 Resources:
+
+NIST NVD
+
+CISA KEV Catalog
+
+📖 Glossary (Important for Exam)
+
+Risk: Anything impacting CIA
+
+Vulnerability: Exploitable weakness
+
+Security posture: Defense readiness
+
+Ransomware: Data encryption + ransom
+
+Social engineering: Human manipulation
+
+Shared responsibility: Security is everyone’s job
+
+🧠 Final Key Takeaways
+
+8 CISSP domains structure cybersecurity work
+
+Risk management is continuous
+
+Threats evolve constantly
+
+Vulnerabilities must be monitored & patched
+
+Least privilege is everywhere
+
+Documentation & monitoring are critical
+
+
+
+
+Module 2: Security Frameworks and controls
+
+🔐 1. Types of Security Controls (Basic Foundation)
+🔹 Encryption
+
+Encryption = Data lock করা
+
+Plaintext → Ciphertext
+
+Goal: Confidentiality
+
+📌 Example:
+Email encrypt করা হলে attacker data পেলেও পড়তে পারবে না।
+
+🧠 CIA Mapping:
+👉 Confidentiality
+
+🔹 Authentication
+
+Authentication = WHO you are
+
+Username + Password
+
+MFA (OTP, fingerprint, face)
+
+🏦 ATM Example:
+
+Card + PIN = Authentication
+
+🧠 Purpose:
+👉 Wrong person যেন ঢুকতে না পারে
+
+🔹 Authorization
+
+Authorization = WHAT you can do
+
+Login করার পর কোন resource access করতে পারবে
+
+🏦 ATM Example:
+
+Balance check?
+
+Withdraw limit? → Authorization
+
+📌 Important line (Exam gold):
+
+Authentication comes first, then Authorization
+
+🧱 2. Frameworks vs Controls (Very Important Confusion Clear করি)
+🔹 Framework কী?
+
+👉 Guideline / blueprint
+
+Framework বলে দেয়:
+
+কী কী protect করতে হবে
+
+কীভাবে security organize হবে
+
+🔹 Cyber Threat Framework (CTF)
+
+US government বানিয়েছে
+
+Purpose: Common language
+
+🧠 কেন দরকার?
+
+Threat info share সহজ হয়
+
+Analyst, SOC, government সবাই same language বোঝে
+
+🔹 ISO/IEC 27001
+
+International standard
+
+ISMS (Information Security Management System)
+
+📌 Important:
+
+Specific tool enforce করে না
+
+Risk-based approach follow করে
+
+🧠 Use case:
+
+Company prove করতে চায়: “আমরা secure”
+
+🔹 Controls কী?
+
+Controls = Actual actions / tools
+
+3 Types:
+🏢 Physical Controls
+
+Gate, lock, CCTV
+
+Security guard
+
+💻 Technical Controls
+
+Firewall
+
+MFA
+
+Antivirus
+
+📋 Administrative Controls
+
+Policy
+
+Separation of duties
+
+Asset classification
+
+📌 Exam Line:
+
+Framework = strategy
+Controls = execution
+
+🧠 3. CIA Triad (Cybersecurity Backbone)
+🔹 Confidentiality
+
+Only authorized access
+
+Example:
+
+Employee portal → 2FA
+
+🔹 Integrity
+
+Data unchanged & trustworthy
+
+Example:
+
+Bank transaction amount verify
+
+🔹 Availability
+
+Data accessible when needed
+
+Example:
+
+Bank website always online
+
+📌 Exam trick:
+
+DDoS attack → Availability issue
+
+Data leak → Confidentiality issue
+
+Data modification → Integrity issue
+
+🏛 4. NIST Cybersecurity Framework (CSF)
+🧭 Core Functions (Order matters)
+0️⃣ Govern (Optional but advanced)
+
+Policy
+
+Risk strategy
+
+Compliance
+
+1️⃣ Identify
+
+Know what you have & what can go wrong
+
+Asset inventory
+
+Risk assessment
+
+Roles & responsibility
+
+2️⃣ Protect
+
+Stop attack before it happens
+
+Firewall
+
+Training
+
+Patch update
+
+3️⃣ Detect
+
+Attack hoise kina detect kora
+
+Monitoring
+
+IDS
+
+Logs
+
+4️⃣ Respond
+
+Attack hoile ki korbo
+
+Incident response plan
+
+Containment
+
+Communication
+
+5️⃣ Recover
+
+Normal state e fera
+
+Backup restore
+
+Lessons learned
+
+📌 Easy flow:
+
+Identify → Protect → Detect → Respond → Recover
+
+🌐 5. OWASP Security Principles (Developer + Analyst mindset)
+🔹 Top Core Principles
+1. Minimize Attack Surface
+
+Unused ports off
+
+Extra API remove
+
+2. Least Privilege
+
+User ≠ Admin
+
+3. Defense in Depth
+
+Multiple layers
+
+Firewall → IDS → MFA → Logs
+
+4. Separation of Duties
+
+One person ≠ full control
+
+5. Keep Security Simple
+
+Complex = misconfig
+
+6. Fix Issues Correctly
+
+Not temporary fix
+👉 Root cause fix
+
+🔹 Advanced Principles
+7. Secure Defaults
+
+Default secure
+
+8. Fail Securely
+
+Fail = block all
+
+9. Don’t Trust Services
+
+Third-party verify
+
+10. No Security by Obscurity
+
+Hide ≠ secure
+
+📌 Interview line:
+
+Security is about control, not secrecy
+
+🔍 6. Security Audit (Very Exam Important)
+🔹 Audit মানে কী?
+
+Independent security health check
+
+🧩 Audit Steps (Order matters)
+1️⃣ Scope & Goals
+
+What to audit
+
+Why
+
+2️⃣ Risk Assessment
+
+High risk first
+
+3️⃣ Controls Assessment
+
+Control exists ≠ effective
+
+4️⃣ Compliance Check
+
+Law / policy follow হচ্ছে?
+
+5️⃣ Communicate Results
+
+Report + recommendation
+
+📌 One-line:
+
+Audit = Find gaps + fix gaps
+
+📋 7. Audit Checklist (Memory Friendly)
+
+Identify scope
+
+Risk assessment
+
+Conduct audit
+
+Mitigation plan
+
+Communicate results
+
+🗣 8. Stakeholder Communication
+
+Must include:
+
+1️⃣ Scope & goals
+2️⃣ Risks (High/Medium/Low)
+3️⃣ Urgency
+4️⃣ Compliance mapping
+5️⃣ Recommendations
+
+📌 Why important?
+
+Management decision নেয় এখান থেকে
+
+✅ Final Big Picture (Very Important)
+
+Framework tells what & why
+Controls do how
+CIA protects data
+NIST organizes security
+OWASP builds secure mindset
+Audit ensures everything works
+
+
+
+
+
+Module 3: Play it safe Manage Security Risks
+
+🔐 PART 1: Logs – Cybersecurity-এর চোখ 👀
+🔥 1️⃣ Firewall Logs (Perimeter Security)
+Firewall log কী?
+
+Firewall যে সিদ্ধান্ত নেয়—
+
+কোন traffic allow
+
+কোনটা block
+
+👉 সেই decision-এর record = Firewall Logs
+
+📌 সহজ ভাষায়:
+কে ঢুকতে চাইল, ঢুকতে পারলো কি না—তার হিসাব
+
+Firewall logs-এ কী থাকে?
+
+Source IP → কে পাঠাচ্ছে
+
+Destination IP → কোথায় যাচ্ছে
+
+Port → কোন service (22 = SSH, 80 = HTTP)
+
+Protocol → TCP / UDP
+
+Action → ALLOW / BLOCK
+
+📌 Example breakdown:
+
+BLOCK TCP 185.23.45.10 → 192.168.1.10 Port 22
+
+
+মানে:
+
+External IP SSH দিয়ে ঢুকতে চাইছে
+
+Firewall block করেছে ✅
+
+Firewall logs দিয়ে কী detect করা যায়?
+
+Unauthorized access attempt
+
+Port scanning (multiple ports hit)
+
+DDoS attack
+
+Known malicious IP
+
+🎯 SOC analyst mindset:
+
+Firewall log = first line of defense
+
+🌐 2️⃣ Network Logs (Inside the Network)
+Network log কী?
+
+Router, Switch থেকে আসা activity record।
+
+👉 Network-এর ভিতরে data কীভাবে move করছে—তার history।
+
+Network logs-এ কী থাকে?
+
+Device connection
+
+Traffic flow
+
+Routing change
+
+Bandwidth usage
+
+📌 Example:
+
+Router interface-এ sudden traffic spike
+
+Network logs দিয়ে কী ধরা যায়?
+
+Network congestion
+
+Lateral movement (attacker ভিতরে move করছে)
+
+Misconfiguration
+
+🎯 SOC mindset:
+
+Firewall perimeter protect করে
+Network log ভিতরের movement ধরে
+
+🖥 3️⃣ Server Logs (System & Application Level)
+Server log কী?
+
+Server যে event handle করে—তার record।
+
+👉 কে login করলো, কী request পাঠালো, error হলো কিনা।
+
+Server logs-এ কী থাকে?
+
+Login / logout
+
+GET / POST request
+
+Errors
+
+File access
+
+📌 Example:
+
+GET /admin/login failed from IP 103.45.22.7
+
+Server logs দিয়ে কী detect করা যায়?
+
+Brute force attack
+
+SQL Injection
+
+Unauthorized admin access
+
+App crash
+
+🎯 SOC mindset:
+
+Server log = attack confirmation
+
+🆚 Firewall vs Network vs Server (Exam Gold)
+Feature	Firewall	Network	Server
+Level	Perimeter	Internal	System/App
+Focus	Allow/Block	Traffic flow	User action
+Detects	DDoS, scan	Lateral move	Brute force
+Analyst role	Stop entry	Trace movement	Confirm attack
+🔐 PART 2: Log Sources (Very Important for SIEM)
+Log Source মানে কী?
+
+👉 যেসব system থেকে logs তৈরি হয়
+
+📌 Easy definition:
+
+“কে, কখন, কী করলো”—যে system লিখে রাখে, সেটাই log source
+
+🔹 Major Log Sources (One by One)
+1️⃣ Operating System Logs
+
+Windows / Linux / macOS
+
+Login, file access, reboot
+
+📌 Use:
+
+Brute force
+
+Privilege abuse
+
+2️⃣ Authentication & Identity Logs
+
+AD, LDAP, SSO
+
+Login success/failure
+
+📌 Use:
+
+Account compromise
+
+3️⃣ Network Device Logs
+
+Router, Switch, Firewall
+
+📌 Use:
+
+Network attack
+
+4️⃣ Security Device Logs
+
+IDS/IPS
+
+Antivirus
+
+EDR/XDR
+
+📌 Use:
+
+Real attack alert 🚨
+
+5️⃣ Application Logs
+
+Web apps
+
+APIs
+
+📌 Use:
+
+SQLi
+
+Web attack
+
+6️⃣ Database Logs
+
+Query execution
+
+Data change
+
+📌 Use:
+
+Data breach
+
+7️⃣ Cloud Logs
+
+AWS CloudTrail
+
+Azure Monitor
+
+📌 Use:
+
+Cloud misconfiguration
+
+8️⃣ Email Logs
+
+Email server
+
+Attachments
+
+📌 Use:
+
+Phishing
+
+9️⃣ VPN Logs
+
+Remote access
+
+Location
+
+📌 Use:
+
+Suspicious remote login
+
+🧠 Memory Trick (Exam Ready)
+
+O-A-N-S-A-D-C-E-V
+
+🧠 PART 3: SIEM – Analyst-এর Command Center
+🔹 SIEM কী?
+
+Security Information and Event Management
+
+👉 Multiple log sources থেকে:
+
+Collect
+
+Correlate
+
+Analyze
+
+Alert
+
+📌 Simple analogy:
+
+SIEM = CCTV + Alarm + Report
+
+🔵 SPLUNK (Traditional SIEM)
+1️⃣ Security Posture Dashboard
+
+Real-time threats
+
+Suspicious IP
+
+2️⃣ Executive Summary
+
+High-level view
+
+Management report
+
+3️⃣ Incident Review
+
+Attack timeline
+
+Before → During → After
+
+4️⃣ Risk Analysis
+
+Highest risk user / device
+
+🟢 CHRONICLE (Google Cloud SIEM)
+Chronicle 특징:
+
+Cloud-native
+
+Long-term log storage
+
+Huge scale
+
+Key Dashboards
+1️⃣ Enterprise Insights
+
+Recent alerts
+
+Severity + confidence score
+
+2️⃣ Data Health
+
+Logs আসছে কিনা
+
+Logs না থাকলে = blind ❌
+
+3️⃣ IOC Matches
+
+Known attackers
+
+4️⃣ Main Dashboard
+
+Big picture
+
+5️⃣ Rule Detections
+
+Which rule triggers most
+
+6️⃣ User Sign-in Overview
+
+Impossible travel detect
+
+🧩 FINAL SOC ANALYST FLOW (Very Important)
+
+1️⃣ Logs collect
+2️⃣ SIEM analyze
+3️⃣ Alert generate
+4️⃣ Incident investigate
+5️⃣ Respond & document
+
+✅ One-Line Exam + Interview Answer
+
+SIEM tools analyze logs from multiple sources to detect, prioritize, and respond to security threats efficiently and in real time.
+
+
+
+
+
+
+
+Module 4: Incident response playbook phases : 1. preparation 2. Detection and analysis 3. Containment 4. Eradication and recovery 5. Post incident activity 6. Coordination
+
+🚨 Incident Response Playbook – Complete Notes (SOC Analyst View)
+🔁 Incident Response Lifecycle (Standard Flow)
+
+Prepare → Detect → Contain → Eradicate & Recover → Learn → Coordinate
+
+এই flow-টাই industry standard (NIST aligned)।
+
+1️⃣ Preparation (প্রস্তুতি)
+👉 Incident হওয়ার আগের সব প্রস্তুতি
+Key Activities
+
+SIEM, Firewall, EDR/XDR properly configured
+
+Incident Response Playbook লেখা
+
+Team roles defined (SOC, IT, Legal, Management)
+
+Regular backup
+
+Training + mock drills
+
+🎯 Goal
+
+Incident হলে যেন panic না হয়—ready response থাকে
+
+🧠 Easy analogy:
+আগুন লাগার আগে fire extinguisher রাখা 🔥
+
+2️⃣ Detection & Analysis (ধরা + বিশ্লেষণ)
+👉 Incident হয়েছে কিনা confirm করা
+কী হয় এখানে?
+
+SIEM alert trigger
+
+Logs analyze:
+
+Firewall
+
+Server
+
+Endpoint
+
+True incident নাকি false positive যাচাই
+
+Examples
+
+Multiple failed login → Brute force
+
+Unknown process → Malware
+
+🎯 Goal
+What happened? How serious? Real or noise?
+
+🧠 Analogy:
+আগুন কোথায়, কতটা বড়—তা দেখা 👀
+
+3️⃣ Containment (ছড়ানো বন্ধ)
+👉 Damage আর যেন ছড়াতে না পারে
+Actions
+
+Infected device isolate
+
+Malicious IP / domain block
+
+Compromised account disable
+
+🎯 Goal
+Blast radius কমানো
+
+🧠 Analogy:
+এক রুমে আগুন → দরজা বন্ধ 🚪
+
+4️⃣ Eradication & Recovery
+🔹 Eradication (মূল সমস্যা সরানো)
+
+Malware delete
+
+Vulnerability patch
+
+Backdoor remove
+
+🔹 Recovery (স্বাভাবিক অবস্থায় ফেরা)
+
+Backup restore
+
+System health verify
+
+Extra monitoring
+
+🎯 Goal
+Threat পুরোপুরি eliminate + system trusted করা
+
+🧠 Analogy:
+আগুন নিভিয়ে ঘর repair করা 🔧
+
+5️⃣ Post-Incident Activity (Lessons Learned)
+👉 Incident থেকে শেখা
+Activities
+
+Incident report
+
+Root cause analysis
+
+Playbook update
+
+Control improvement
+
+🎯 Goal
+Same incident যেন আবার না ঘটে
+
+🧠 Analogy:
+আগুন লাগার কারণ বের করে future prevention
+
+6️⃣ Coordination (সমন্বয়)
+👉 পুরো lifecycle জুড়ে communication
+Stakeholders
+
+Security team
+
+IT team
+
+Management
+
+Legal / Compliance
+
+External (law enforcement, vendors)
+
+🎯 Goal
+One decision, one direction
+
+🧠 Analogy:
+সবাই একসাথে কাজ করা 🤝
+
+🔁 One-Line Memory Trick (Exam Gold)
+
+Prepare → Detect → Contain → Fix → Learn → Coordinate
+
+📘 Playbooks, SIEM & SOAR – Connection
+🔹 Playbook কী?
+
+➡️ Step-by-step response manual
+
+Incident হলে কী করবে
+
+কে করবে
+
+কোন order-এ করবে
+
+📌 Different incident → different playbook
+(Brute force, malware, ransomware, phishing)
+
+🔹 SIEM + Playbook
+
+SIEM → alert detect করে
+
+Playbook → analyst কে guide করে
+
+📌 Example
+SIEM detects abnormal login → Playbook says:
+
+Check logs
+
+Disable account
+
+Notify IT
+
+🔹 SOAR + Playbook
+
+SOAR = Automation engine
+
+📌 Example
+
+10 failed login →
+SOAR auto block account
+
+Analyst then follows playbook
+
+🎯 SOAR = Speed
+🎯 Playbook = Correctness
+
+🧠 Incident & Vulnerability Playbook – Common Steps
+
+Preparation
+
+Detection
+
+Analysis
+
+Containment
+
+Eradication
+
+Recovery
+
+📚 Glossary – Simplified (Exam Friendly)
+🔐 Core Concepts
+
+Authentication → WHO you are
+
+Authorization → WHAT you can do
+
+CIA Triad → Confidentiality, Integrity, Availability
+
+🧱 Security & Risk
+
+Asset → Valuable item
+
+Threat → Something harmful
+
+Vulnerability → Weakness
+
+Risk → Threat × Impact
+
+🛠 Frameworks & Tools
+
+NIST CSF → Identify, Protect, Detect, Respond, Recover
+
+SIEM → Log collection + analysis
+
+SOAR → Automated response
+
+Chronicle → Google cloud SIEM
+
+Splunk → Traditional SIEM
+
+🔍 Incident Response
+
+Incident response → Detect → Contain → Fix
+
+Ransomware → Data encrypt করে টাকা দাবি
+
+Log → System activity record
+
+Playbook → Action manual
