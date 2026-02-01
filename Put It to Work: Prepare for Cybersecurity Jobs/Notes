@@ -1,3 +1,10 @@
+🥰 STAR Method for interview answer:
+
+Situation: During my cybersecurity course, I received repeated failed login alerts from a single IP address.
+Task: I was responsible for determining whether it was a real security threat.
+Action: I analyzed authentication logs using a SIEM tool, checked the IP reputation, and reviewed login patterns.
+Result: I confirmed it was a brute-force attempt, escalated the issue, and access was blocked, preventing a potential breach.
+
 📌 Step-by-Step Explanation — Video Breakdown
 0.00 Get Started with the Course
 
